@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="w-75 my-3 m-auto">
+
+        <label for="productName"> productName: </label>
+        <input type="text" class=" form-control my-2"  id="productName">
+        <label for="productPrice"> productPrice: </label>
+        <input type="number" class=" form-control my-2"  id="productPrice">
+        <label for="productcat"> productCat: </label>
+        <input type="text" class=" form-control my-2"  id="productcat">
+        <label for="productDesc"> productDescription: </label>
+        <textarea  id="productDesc" class="form-control mt-2"></textarea>
+        <button  id="demo" onclick=" clickbtn()" class=" btn btn-primary my-2">addProduct</button>
+
+
+
+    </div>
+
+
+    <div class="w-50 m-auto">
+        <label  for="serchInput"> search: </label>
+        <input onkeyup="searchInput(this.value)" class=" form-control " type="text" name="" id="serchInput">
+    </div>
+   
+    <div class="w-75 m-auto my-3">
+
+        <table class=" table w-100">
+            <thead class="text-white w-100">
+                <th>Index:</th>
+                <th>productName:</th>
+                <th>productPrice:</th>
+                <th>productCategory:</th>
+                <th>productDescription:</th>
+            </thead>
+            <tbody id="tableRow" class="text-white w-100">
+                
+
+ 
+            </tbody>
+            
+        </table>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
